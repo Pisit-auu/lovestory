@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Love Story Pool Villa (สีสด) สัตหีบ · บ้านพักพูลวิลล่าเปิดใหม่ ใกล้หาดนางรำ หาดน้ำใส</title>
+<meta name="description" content="บ้านพักพูลวิลล่าเปิดใหม่ สไตล์มินิมอล มูจิ 2 ชั้น สัตหีบ 3 ห้องนอน 3 ห้องน้ำ สระส่วนตัว ห้องคาราโอเกะ ห่างหาดนางรำและหาดน้ำใส 15 นาที มีบริการดำน้ำดูปะการัง ตกหมึก ตกปลา">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Love Story Pool Villa สัตหีบ · บ้านพักเปิดใหม่">
+<meta property="og:description" content="สไตล์มินิมอล มูจิ 2 ชั้น สระส่วนตัว คาราโอเกะ ห่างหาดนางรำ หาดน้ำใส 15 นาที">
+<meta property="og:image" content="../img/og.jpg">
+<meta name="theme-color" content="#29b6f6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../img/front-hero.jpg">
+<style>
+:root{
+  --wall:#fff8ec; --plaster:#ffffff; --sand:#fbecd6;
+  --ink:#4a2e25; --ink-soft:#6e4e40;
+  --teak:#c98a4b; --teak-deep:#9a5f2c;
+  --pink:#f0628f; --pink-deep:#c23361; --pink-soft:#ffd6e3; --pink-pale:#fff0f4;
+  --sea:#3fb6d6; --sea-deep:#1f7f99; --sea-soft:#bfe9f3; --sea-ink:#0f4c5c;
+  --sun:#ffc94a; --leaf:#5aa36a; --leaf-deep:#3f8a55;
+  --line:#04843a;
+  --shadow:0 18px 40px -12px rgba(110,62,30,.28);
+  --shadow-sm:0 8px 20px -8px rgba(110,62,30,.25);
+  --r-arch:999px 999px 28px 28px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gut:clamp(18px,5vw,40px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scrollbar-color:var(--teak) var(--wall);-webkit-text-size-adjust:100%}
+body{font-family:'Mali',system-ui,sans-serif;background:var(--wall);color:var(--ink);font-size:clamp(17px,1.1vw + 12px,19px);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--pink-soft);color:var(--ink)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sea);outline-offset:3px;border-radius:12px}
+.script{font-family:'Pacifico',cursive;font-weight:400}
+.wrap{width:min(1160px,100% - var(--gut)*2);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.deco{position:absolute;pointer-events:none;z-index:0}
+h2{font-size:clamp(30px,3vw + 16px,50px);line-height:1.2;font-weight:700;text-wrap:balance;letter-spacing:-.01em}
+h2 .script{font-family:'Mali',sans-serif;font-weight:700;color:var(--pink-deep)}
+h2 .pac{font-family:'Pacifico',cursive;font-weight:400;color:var(--pink);line-height:1}
+p{text-wrap:pretty}
+.lead{font-size:1.08em;color:var(--ink-soft);max-width:34ch}
+
+/* ---------- top bar ---------- */
+.top{position:absolute;inset:0 0 auto;z-index:20;padding:14px 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.04em}
+.brand svg{width:46px;height:28px}
+.top-line{display:none;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;background:var(--plaster);padding:8px 16px;border-radius:999px;box-shadow:var(--shadow-sm)}
+
+/* ---------- arch + door ---------- */
+.arch{position:relative;border-radius:var(--r-arch);background:var(--plaster);padding:12px;box-shadow:var(--shadow)}
+.arch-in{position:relative;border-radius:var(--r-arch);overflow:hidden;height:100%;background:var(--sand);perspective:1400px}
+.arch-in>img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.6s var(--ease)}
+.arch-in .leaf{position:absolute;top:0;bottom:0;width:50.5%;z-index:2;
+  background:#a8692f center/100% 100% no-repeat;
+  transition:transform 1.5s var(--ease), filter 1.5s var(--ease)}
+.arch-in .leaf.l{left:0;transform-origin:left center;background-image:url(../img/door-l.jpg)}
+.arch-in .leaf.r{right:0;transform-origin:right center;background-image:url(../img/door-r.jpg)}
+.js .arch-in:not(.open) .leaf{transform:none}
+.js .arch-in.open .leaf.l,.arch-in .leaf.l{transform:rotateY(-104deg);filter:brightness(.7)}
+.js .arch-in.open .leaf.r,.arch-in .leaf.r{transform:rotateY(104deg);filter:brightness(.7)}
+.js .arch-in:not(.open) .leaf.l{transform:rotateY(0)}
+.js .arch-in:not(.open) .leaf.r{transform:rotateY(0)}
+.js .arch-in.open>img{transform:scale(1)}
+.threshold{height:16px;margin:0 8%;border-radius:0 0 14px 14px;background:linear-gradient(180deg,var(--teak),var(--teak-deep));box-shadow:0 10px 16px -10px rgba(90,48,16,.6)}
+
+.tag{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:8px;background:var(--plaster);padding:8px 16px 8px 12px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.25;box-shadow:var(--shadow-sm);white-space:nowrap}
+.tag svg{width:22px;height:22px;flex:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:700 17px/1 'Mali',sans-serif;text-decoration:none;cursor:pointer;border:0;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .25s}
+.btn svg{width:24px;height:24px;flex:none}
+.btn-line{background:var(--line);color:#fff;box-shadow:0 12px 24px -10px rgba(6,140,60,.6)}
+.btn-line:hover{transform:translateY(-2px);box-shadow:0 16px 28px -10px rgba(6,140,60,.7)}
+.btn-call{background:var(--plaster);color:var(--ink);box-shadow:inset 0 0 0 2.5px var(--pink-soft)}
+.btn-call:hover{box-shadow:inset 0 0 0 2.5px var(--pink);transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:76px 0 8px;overflow:hidden;
+  background:radial-gradient(ellipse 80% 50% at 70% 0%,#dff1fb 0%,rgba(223,241,251,0) 70%)}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:28px}
+.hero-arch{position:relative;width:min(100%,520px);margin-inline:auto}
+.hero-arch .arch{aspect-ratio:3/3.7}
+.hero-arch .tag.a{left:-6px;top:30%;transform:rotate(-4deg)}
+.hero-arch .tag.b{right:-6px;top:41%;transform:rotate(3deg)}
+.hero-copy{position:relative;text-align:center}
+.hero h1{font-weight:400;line-height:1}
+.hero h1 .script{display:block;font-size:clamp(58px,7vw + 30px,112px);color:var(--ink);line-height:1.05;letter-spacing:-.005em}
+.t-heart{width:.42em;height:.4em;vertical-align:.55em;margin-left:.06em;transform:rotate(12deg)}
+.hero h1 .script em{display:block;font-style:normal;color:var(--pink-deep)}
+.hero h1 .th{display:block;font:700 clamp(16px,.6vw + 13px,19px)/1.4 'Mali';letter-spacing:.03em;color:var(--teak-deep);margin-top:26px}
+.hero .new{display:inline-block;margin-top:18px;font-weight:700;font-size:clamp(22px,1.4vw + 16px,30px);color:var(--pink-deep);line-height:1.3}
+.hero .new-sub{margin-top:4px;color:var(--ink-soft)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+.hero-title-over{margin-top:-74px;position:relative;z-index:4}
+.hero-title-over .script{text-shadow:0 0 18px var(--wall),0 0 4px var(--wall),0 0 2px var(--wall)}
+
+/* ---------- threshold strip ---------- */
+.doormat{position:relative;z-index:3;margin-top:8px}
+.doormat ul{list-style:none;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px;scrollbar-width:none}
+.doormat ul::-webkit-scrollbar{display:none}
+.doormat li{flex:0 0 auto;scroll-snap-align:start;display:flex;align-items:center;gap:10px;background:var(--plaster);border-radius:999px;padding:8px 18px 8px 8px;font-weight:600;font-size:16px;box-shadow:var(--shadow-sm)}
+.doormat .ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--pink-pale)}
+.doormat li:nth-child(even) .ic{background:#e6f6fb}
+.ic svg{width:26px;height:26px;fill:none;stroke:var(--ink);stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- rooms ---------- */
+.room{position:relative;overflow:clip;padding:clamp(56px,9vw,130px) 0}
+.room .wrap{position:relative;z-index:2;display:grid;gap:34px;align-items:center}
+.room .arch{aspect-ratio:3/3.6}
+.room-copy p{margin-top:14px}
+.facts{list-style:none;margin-top:20px;display:grid;gap:8px}
+.facts li{display:flex;gap:10px;align-items:baseline}
+.facts li svg{width:18px;height:18px;flex:none;transform:translateY(3px)}
+.snap{position:relative;border-radius:22px;overflow:hidden;background:var(--plaster);padding:7px;box-shadow:var(--shadow-sm)}
+.snap img{border-radius:16px;width:100%;height:100%;object-fit:cover}
+.snap figcaption{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.95);border-radius:12px;padding:4px 12px 4px 8px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:6px}
+.snap figcaption::before{content:"";width:16px;height:15px;flex:none;background:var(--pink);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 30'%3E%3Cpath d='M16 28C6 20 1 15 1 9a7.5 7.5 0 0 1 15-1.5A7.5 7.5 0 0 1 31 9c0 6-5 11-15 19z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 30'%3E%3Cpath d='M16 28C6 20 1 15 1 9a7.5 7.5 0 0 1 15-1.5A7.5 7.5 0 0 1 31 9c0 6-5 11-15 19z'/%3E%3C/svg%3E") center/contain no-repeat}
+.snap:nth-of-type(even) figcaption::before{background:var(--sea)}
+
+.pool-wrap .duo{position:relative}
+.pool-wrap .snap.side{position:absolute;width:44%;aspect-ratio:3/4;right:-4%;bottom:-8%;z-index:4;transform:rotate(4deg)}
+
+/* bed map */
+.beds{background:var(--sand)}
+.bedmap{margin-top:26px;display:grid;gap:14px}
+.bedroom{background:var(--plaster);border-radius:24px;padding:16px;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center}
+.bedroom img{width:96px;height:96px;object-fit:cover;border-radius:16px}
+.bedroom h3{font-size:18px;line-height:1.3}
+.bedroom .plan{display:flex;gap:8px;align-items:flex-end;margin-top:8px;flex-wrap:wrap}
+.bed{position:relative;height:46px;border-radius:8px 8px 6px 6px;background:var(--pink-pale);box-shadow:inset 0 0 0 2px var(--pink-soft);display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--pink-deep)}
+.bed::before{content:"";position:absolute;top:5px;left:12%;right:12%;height:9px;border-radius:5px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--pink-soft)}
+.bed span{margin-top:12px}
+.bed.sofa{background:#e6f6fb;box-shadow:inset 0 0 0 2px var(--sea-soft);color:var(--sea-deep)}
+.bed.sofa::before{box-shadow:inset 0 0 0 1.5px var(--sea-soft)}
+.bed-note{font-size:14px;color:var(--ink-soft);margin-top:12px}
+.bedroom-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bedroom-gallery .snap{aspect-ratio:4/3}
+.bedroom-gallery .snap.tall{grid-row:span 2;aspect-ratio:auto}
+
+/* living */
+.living-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.living-grid .snap{aspect-ratio:1/1}
+.living-grid .wide{grid-column:span 2;margin-bottom:6px}
+.living-grid .wide .arch{aspect-ratio:4/3.6}
+.mic-note{display:flex;gap:14px;align-items:center;margin-top:22px;background:var(--pink-pale);border-radius:22px;padding:14px 18px}
+.mic-note .ic{width:52px;height:52px;border-radius:50%;background:var(--plaster);display:grid;place-items:center;flex:none}
+.mic-note b{display:block;font-size:18px}
+
+/* sea */
+.sea{position:relative;background:linear-gradient(180deg,#d9f2f8 0%,#bfe9f3 40%,#8fd8ea 100%);color:var(--sea-ink);padding:clamp(80px,10vw,140px) 0 clamp(90px,10vw,140px);overflow:hidden}
+.sea h2 .script{color:var(--sea-ink)}
+.sea h2{color:var(--sea-ink)}
+.sea .wrap{position:relative;z-index:2}
+.sea .lead{color:var(--sea-ink)}
+.dist{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.dist div{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.85);border-radius:20px;padding:12px 18px}
+.dist b{display:block;font-size:24px;line-height:1.1;color:var(--pink-deep)}
+.dist small{font-size:15px;font-weight:600}
+.dist svg{width:34px;height:34px}
+.ticket{position:relative;margin-top:40px;background:var(--plaster);border-radius:30px;padding:24px 22px 22px;box-shadow:0 18px 34px -16px rgba(15,76,92,.5)}
+.ticket::before{content:"";position:absolute;inset:8px;border:3px dashed var(--sea);border-radius:24px;pointer-events:none}
+.ticket h3{font-size:22px;line-height:1.3;color:var(--sea-ink);display:flex;align-items:center;gap:10px}
+.ticket h3 svg{width:44px;height:28px;flex:none}
+.trips{list-style:none;display:grid;grid-template-columns:1fr;gap:6px 14px;margin-top:12px}
+.trips li{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;line-height:1.3;color:var(--ink)}
+.trips svg{width:48px;height:48px;flex:none}
+.sea-wave{position:absolute;left:0;width:100%;height:70px;z-index:1;display:block}
+.sea-wave.sw-top{top:-1px}
+.sea-wave.sw-bot{bottom:-1px}
+
+/* contact */
+.knock{position:relative;padding:clamp(70px,9vw,120px) 0 60px;text-align:center;overflow:hidden}
+.knock .wrap{position:relative;z-index:2;display:grid;gap:30px;justify-items:center}
+.knock .arch{width:min(100%,380px);aspect-ratio:3/3.4}
+.contact-card{width:min(100%,560px);background:var(--plaster);border-radius:32px;padding:26px 22px;box-shadow:var(--shadow)}
+.contact-card .btn-line{width:100%;min-height:62px;font-size:19px}
+.line-id{margin-top:10px;font-size:15px;color:var(--ink-soft);display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+.copy{font:700 14px 'Mali';background:var(--pink-pale);color:var(--pink-deep);border:0;border-radius:999px;padding:4px 12px;cursor:pointer}
+.phones{display:grid;gap:10px;margin-top:20px}
+.phone{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;background:var(--wall);border-radius:20px;padding:12px 16px;transition:background-color .25s}
+.phone:hover{background:var(--pink-pale)}
+.phone .num{white-space:nowrap;font-size:clamp(19px,4.6vw,24px);font-weight:700;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.phone .who{font-weight:700;font-size:14px;color:#fff;background:var(--pink-deep);border-radius:999px;padding:3px 12px}
+.phone .call-ic{width:40px;height:40px;border-radius:50%;background:var(--pink);display:grid;place-items:center;flex:none}
+.phone .call-ic svg{width:20px;height:20px}
+.fb{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:700;font-size:15px;color:#1f5fbf;text-underline-offset:4px}
+.fb svg{width:22px;height:22px}
+.hem{height:clamp(70px,8vw,120px);margin-top:10px}
+.hem svg{width:100%;height:100%;display:block}
+footer{background:#7fd2e6;color:var(--sea-ink)!important;padding:8px 0 calc(110px + env(safe-area-inset-bottom));text-align:center;font-size:14px;color:var(--ink-soft)}
+footer svg{display:block}
+
+/* sticky bar */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));background:rgba(255,248,236,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -10px 30px -18px rgba(110,62,30,.4);display:grid;grid-template-columns:1fr auto;gap:10px;transition:transform .5s var(--ease)}
+.dock .btn{min-height:52px;white-space:nowrap}
+.dock .btn-call{padding:0 18px}
+.dock.hide{transform:translateY(110%)}
+
+/* reveal for copy (visible by default; JS adds motion only) */
+.js .rise{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rise.in{opacity:1;transform:none}
+
+/* ---------- desktop ---------- */
+@media (min-width:880px){
+  footer{padding-bottom:30px}
+  .top-line{display:inline-flex}
+  .hero{padding:110px 0 60px}
+  .hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;gap:56px}
+  .hero-copy{text-align:left;order:-1}
+  .hero-title-over{margin-top:0}
+  .hero h1 .th{margin-top:40px}
+  .hero .ctas{justify-content:flex-start}
+  .hero-arch .tag.a{left:-40px}
+  .hero-arch .tag.b{right:-30px}
+  .room .wrap{grid-template-columns:1fr 1fr;gap:72px}
+  .room.flip .room-copy{order:2}
+  .bedmap{grid-template-columns:1fr}
+  .trips{grid-template-columns:repeat(4,auto);justify-content:space-between}
+  .hero h1 .script{font-size:clamp(64px,6.4vw,100px)}
+  .ticket{padding:30px 40px}
+  .doormat ul{flex-wrap:wrap;overflow:visible}
+  .sea .head{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end}
+  .dock{left:auto;right:28px;bottom:24px;border-radius:999px;padding:8px;background:rgba(255,255,255,.9)}
+  .dock.hide{transform:translateY(150%)}
+  .hero{padding-bottom:40px}
+  .knock .wrap{grid-template-columns:360px minmax(0,520px);justify-content:center;justify-items:stretch;text-align:left;align-items:center;gap:60px}
+  .knock .head{grid-column:1/-1;justify-self:center;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .js .rise{opacity:1;transform:none}
+}
+</style>
+
+<style>
+/* ===== VIVID THEME ===== */
+:root{--wall:#fff3c4;--pink:#ff2d78;--pink-deep:#c2185b;--sea:#00a8e8}
+body{background:#fff3c4}
+.arch-in>img,.snap img,.bedroom img{filter:saturate(1.4) contrast(1.06) brightness(1.03)}
+.hero{background:linear-gradient(180deg,#29b6f6 0%,#7fd8ff 30%,#ffe2ee 72%,#fff3c4 100%)}
+.brand{color:#fff;text-shadow:0 2px 0 rgba(0,90,150,.35)}
+.brand svg{color:#fff}
+.hero h1 .script{color:#ff2d78;-webkit-text-stroke:2px #fff;paint-order:stroke fill;text-shadow:4px 4px 0 #ffd23f,7px 7px 0 #9c1046}
+.hero h1 .script em{color:#0077c8;text-shadow:4px 4px 0 #fff,7px 7px 0 #ffd23f}
+.hero-title-over .script{text-shadow:4px 4px 0 #ffd23f,7px 7px 0 #9c1046}
+.hero h1 .th{color:#b34700}
+.hero .new{display:inline-block;background:linear-gradient(135deg,#d81b60,#d9480f);color:#fff;border-radius:999px;padding:8px 22px 10px;border:4px solid #fff;box-shadow:0 7px 0 #b0164f,0 16px 26px -8px rgba(255,45,120,.6);text-shadow:0 2px 0 rgba(120,10,50,.35)}
+.hero .new-sub{color:#3a1a12;font-weight:600}
+.arch{box-shadow:0 0 0 7px #ff2d78,0 22px 40px -10px rgba(200,0,80,.45)}
+.pool-wrap .arch,.knock .arch{box-shadow:0 0 0 7px #00a8e8,0 22px 40px -10px rgba(0,110,200,.45)}
+.beds .arch{box-shadow:0 0 0 7px #ffb000,0 22px 40px -10px rgba(220,130,0,.45)}
+.tag{border:3px solid #ff2d78}
+.doormat li{border:3px solid #fff;box-shadow:0 8px 18px -8px rgba(160,30,80,.4)}
+.doormat li:nth-child(1){background:#d81b60;color:#fff}
+.doormat li:nth-child(2){background:#0070b8;color:#fff}
+.doormat li:nth-child(3){background:#ffb000;color:#3a1a12}
+.doormat li:nth-child(4){background:#6c3fe0;color:#fff}
+.doormat li:nth-child(5){background:#18804a;color:#fff}
+.doormat li:nth-child(6){background:#c2410c;color:#fff}
+.doormat .ic,.doormat li:nth-child(even) .ic{background:#fff}
+.room.pool-wrap{background:#ffe2ee}
+.beds{background:#d9f3ff}
+.room:not(.pool-wrap):not(.beds){background:#ffe2ee}
+h2 .script{color:#c2185b}
+.beds h2 .script{color:#0067a3}
+.bedroom{border:3px solid #fff;box-shadow:0 0 0 4px #00a8e8,0 12px 24px -12px rgba(0,110,200,.4)}
+.bed{background:#ffd6e5;box-shadow:inset 0 0 0 2px #ff2d78;color:#a3104a}
+.bed.sofa{background:#c9efff;box-shadow:inset 0 0 0 2px #00a8e8;color:#005b8f}
+.snap{box-shadow:0 0 0 5px #ff2d78,0 12px 24px -10px rgba(200,0,80,.4)}
+.snap:nth-of-type(even){box-shadow:0 0 0 5px #00a8e8,0 12px 24px -10px rgba(0,110,200,.4)}
+.snap figcaption{background:#d81b60;color:#fff}
+.snap figcaption::before{background:#fff!important}
+.snap:nth-of-type(even) figcaption{background:#0077c8}
+.mic-note{background:#fff;box-shadow:0 0 0 4px #8f5bff}
+.mic-note .ic{background:#efe6ff}
+.sea{background:linear-gradient(180deg,#087fb8 0%,#0070ad 55%,#005f96 100%);color:#fff}
+.sea-wave.sw-top path{fill:#ffe2ee}
+.sea-wave.sw-bot path{fill:#fff3c4}
+.sea h2,.sea h2 .script,.sea .lead{color:#fff}
+.sea h2{text-shadow:0 3px 0 rgba(0,60,110,.35)}
+.sea h2 .script{color:#ffe066}
+.dist div{background:#fff}
+.ticket{box-shadow:0 0 0 6px #ffd23f,0 20px 34px -14px rgba(0,50,100,.6)}
+.knock h2 .pac{color:#ff2d78;text-shadow:3px 3px 0 #ffd23f}
+.contact-card{background:linear-gradient(160deg,#d81b60,#d9480f);border:5px solid #fff;box-shadow:0 0 0 6px #ffd23f,0 24px 40px -14px rgba(200,0,80,.55);color:#fff}
+.line-id{color:#fff}
+.copy{background:#fff;color:#c2185b}
+.phone{background:#fff;color:var(--ink)}
+.dist div{color:var(--sea-ink)}
+.hero .new-sub b{color:#c2185b;font-size:1.1em}
+.phone:hover{background:#fff3c4}
+.phone .call-ic{background:#ff2d78}
+.fb{color:#fff}
+.fb svg circle{fill:#fff}.fb svg path{fill:#1f5fbf}
+.hem svg path:nth-child(1){fill:#7fdcf2}.hem svg path:nth-child(2){fill:#0068a3}
+footer{background:#0068a3;color:#fff!important}
+footer svg{color:#fff!important}
+.dock{background:rgba(255,243,196,.94)}
+::selection{background:#ffd23f}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="heart" viewBox="0 0 32 30"><path d="M16 28C6 20 1 15 1 9a7.5 7.5 0 0 1 15-1.5A7.5 7.5 0 0 1 31 9c0 6-5 11-15 19z"/></symbol>
+    <symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5C6.2 2.5 1.5 6.3 1.5 11c0 4.2 3.7 7.7 8.8 8.4.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s6-3.5 8.2-6.1c1.5-1.7 2.3-3.3 2.3-5.2 0-4.7-4.7-8.5-10.5-8.5z"/><path fill="#06c755" d="M6.3 13.6h2.4c.2 0 .3-.1.3-.3v-.5c0-.2-.1-.3-.3-.3H7.1V8.6c0-.2-.1-.3-.3-.3h-.5c-.2 0-.3.1-.3.3v4.7c0 .2.1.3.3.3zm3.6-5.3h-.5c-.2 0-.3.1-.3.3v4.7c0 .2.1.3.3.3h.5c.2 0 .3-.1.3-.3V8.6c0-.2-.1-.3-.3-.3zm4.4 0h-.5c-.2 0-.3.1-.3.3v2.8l-2.1-2.9h-.6c-.2 0-.3.1-.3.3v4.7c0 .2.1.3.3.3h.5c.2 0 .3-.1.3-.3v-2.8l2.2 2.9.1.1h.6c.2 0 .3-.1.3-.3V8.6c-.2-.2-.3-.3-.5-.3zm3.8 1V8.6c0-.2-.1-.3-.3-.3h-2.4c-.2 0-.3.1-.3.3v4.7c0 .2.1.3.3.3h2.4c.2 0 .3-.1.3-.3v-.5c0-.2-.1-.3-.3-.3h-1.6v-.8h1.6c.2 0 .3-.1.3-.3v-.5c0-.2-.1-.3-.3-.3h-1.6v-.8h1.6c.2 0 .3-.1.3-.4z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 3.2l2.5-.6 2 4.6-1.7 1.5a11 11 0 0 0 5.9 5.9l1.5-1.7 4.6 2-.6 2.5a2.2 2.2 0 0 1-2.4 1.6A17 17 0 0 1 5 5.6a2.2 2.2 0 0 1 1.6-2.4z"/></symbol>
+    <symbol id="car" viewBox="0 0 24 24"><g fill="none" stroke="#3fb6d6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16v-4l2.2-5a2 2 0 0 1 1.8-1.2h10a2 2 0 0 1 1.8 1.2L21 12v4"/><path d="M3 12h18v4H3z"/></g><circle cx="7" cy="17.5" r="1.9" fill="#3fb6d6"/><circle cx="17" cy="17.5" r="1.9" fill="#3fb6d6"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 40 40"><path d="M5 30V11M5 23h30v7M35 23v-4a4 4 0 0 0-4-4H18v8"/><circle cx="11.5" cy="18.5" r="3.5"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 40 40"><path d="M6 20h28v4a8 8 0 0 1-8 8H14a8 8 0 0 1-8-8zM10 20V9a3 3 0 0 1 6 0M12 32l-2 3M28 32l2 3"/></symbol>
+    <symbol id="i-pool" viewBox="0 0 40 40"><path d="M13 27V8a3 3 0 0 1 6 0M25 27V8a3 3 0 0 1 6 0M13 13h12M13 20h12"/><path d="M4 31c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 40 40"><rect x="14" y="5" width="12" height="19" rx="6"/><path d="M9 19a11 11 0 0 0 22 0M20 30v6M14 36h12"/></symbol>
+    <symbol id="i-kitchen" viewBox="0 0 40 40"><path d="M8 17h24v13a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5zM4 20h4M32 20h4M16 17v-3a4 4 0 0 1 8 0v3"/><path d="M15 6c0 2 2 2 2 4M21 5c0 2 2 2 2 4"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 40 40"><path d="M8 20v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6"/><path d="M5 19a3 3 0 0 1 3 3v3h24v-3a3 3 0 0 1 6 0v8H2v-8a3 3 0 0 1 3-3zM7 30v4M33 30v4"/></symbol>
+    <symbol id="i-stairs" viewBox="0 0 40 40"><path d="M5 34h8v-7h8v-7h8v-7h7"/><path d="M5 34V20"/></symbol>
+    <symbol id="logo" viewBox="0 0 160 90"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 70h20c-8-4-14-12-8-18s12 4 6 14c-2 3-2 4 4 4h40V44l20-18 20 18v26h40"/><path d="M74 70V54h12v16"/></g><path d="M42 82c6-4 10 4 16 0s10 4 16 0 10 4 16 0 10 4 16 0" fill="none" stroke="#3fb6d6" stroke-width="4" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Love Story Pool Villa หน้าแรก"><svg aria-hidden="true"><use href="#logo"/></svg>LOVE STORY</a>
+    <a class="top-line" href="https://line.me/ti/p/~082-2189655" target="_blank" rel="noopener"><svg width="22" height="22" style="color:#06c755"><use href="#line"/></svg>แอดไลน์</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ===== HERO: the front door ===== -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div class="hero-arch rise in">
+        <div class="arch">
+          <div class="arch-in door" data-door>
+            <img src="../img/front-hero.jpg" alt="หน้าบ้าน Love Story Pool Villa ผนังขาว ประตูไม้สักทรงโค้ง ประดับโบว์แดง" style="object-position:62% 50%" fetchpriority="high">
+            <span class="leaf l" aria-hidden="true"></span><span class="leaf r" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="threshold" aria-hidden="true"></div>
+        <span class="tag a"><svg aria-hidden="true"><use href="#car"/></svg>หาดน้ำใส 15 นาที</span>
+        <span class="tag b"><svg aria-hidden="true"><use href="#car"/></svg>หาดนางรำ 15 นาที</span>
+      </div>
+
+      <div class="hero-copy hero-title-over">
+        <h1 id="h1"><span class="script"><span style="white-space:nowrap">Love Story<svg class="t-heart" aria-hidden="true" fill="#f0628f"><use href="#heart"/></svg></span> <em>pool villa</em></span><span class="th">เลิฟ สตอรี่ พูลวิลล่า · สัตหีบ</span></h1>
+        <p class="new">บ้านพักเปิดใหม่!</p>
+        <p class="new-sub"><b>สไตล์มินิมอล มูจิ 2 ชั้น</b><br>แยกสัดส่วนลงตัว บ้านสวยตรงปก ของใช้ครบ</p>
+        <div class="ctas">
+          <a class="btn btn-line" href="https://line.me/ti/p/~082-2189655" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#line"/></svg>แอดไลน์ถามวันว่าง</a>
+          <a class="btn btn-call" href="tel:0822189655"><svg aria-hidden="true" style="color:var(--pink)"><use href="#phone"/></svg>โทร 082-218-9655</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap doormat" aria-label="ในบ้านมีอะไรบ้าง">
+      <ul>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-bed"/></svg></span>3 ห้องนอน</li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-bath"/></svg></span>3 ห้องน้ำ</li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-pool"/></svg></span>สระว่ายน้ำส่วนตัว</li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>ห้องคาราโอเกะ</li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-kitchen"/></svg></span>ห้องครัว</li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-stairs"/></svg></span>บ้าน 2 ชั้น</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== POOL ===== -->
+  <section class="room pool-wrap" aria-labelledby="h-pool">
+    <div class="wrap">
+      <div class="duo rise">
+        <div class="arch">
+          <div class="arch-in" data-door>
+            <img src="../img/pool.jpg" alt="สระว่ายน้ำส่วนตัวเปิดไฟตอนกลางคืน มีห่วงยางยูนิคอร์นลอยอยู่" loading="lazy" style="object-position:40% 55%">
+            <span class="leaf l" aria-hidden="true"></span><span class="leaf r" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="threshold" aria-hidden="true"></div>
+        <figure class="snap side"><img src="../img/poolside.jpg" alt="โต๊ะนั่งเล่นริมสระ" loading="lazy" style="object-position:50% 60%"><figcaption>มุมนั่งริมสระ</figcaption></figure>
+      </div>
+      <div class="room-copy rise">
+        <h2 id="h-pool">เปิดประตูมาก็เจอ<br><span class="script">สระส่วนตัว</span></h2>
+        <p class="lead">เล่นน้ำกันได้ทั้งบ้าน ไม่ต้องแชร์กับใคร ตกค่ำเปิดไฟสระสวย ๆ นั่งเล่นริมสระต่อได้ยาว ๆ</p>
+        <ul class="facts">
+          <li><svg aria-hidden="true" fill="#f0628f"><use href="#heart"/></svg>สระว่ายน้ำส่วนตัวในตัวบ้าน</li>
+          <li><svg aria-hidden="true" fill="#3fb6d6"><use href="#heart"/></svg>ประตูกระจกเปิดออกจากห้องนั่งเล่นตรงสู่สระ</li>
+          <li><svg aria-hidden="true" fill="#f0628f"><use href="#heart"/></svg>มุมโต๊ะนั่งริมสระ สำหรับกินข้าว นั่งคุยกัน</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEDROOMS ===== -->
+  <section class="room beds flip" aria-labelledby="h-beds">
+    <div class="wrap">
+      <div class="room-copy rise">
+        <h2 id="h-beds">ขึ้นชั้นสอง<br><span class="script">นอนกันยังไง?</span></h2>
+        <p class="lead">3 ห้องนอน เตียงทั้งหมด 4 เตียง และโซฟาเบดปรับนอนได้อีก 1 ชุด แบ่งห้องกันได้สบาย</p>
+        <div class="bedmap">
+          <div class="bedroom">
+            <img src="../img/bed1b.jpg" alt="ห้องนอนที่ 1" loading="lazy" style="object-position:75% 60%">
+            <div><h3>ห้องนอนที่ 1</h3>
+              <div class="plan"><div class="bed" style="width:72px"><span>6 ฟุต</span></div><div class="bed" style="width:72px"><span>6 ฟุต</span></div></div></div>
+          </div>
+          <div class="bedroom">
+            <img src="../img/bed2.jpg" alt="ห้องนอนที่ 2" loading="lazy" style="object-position:50% 70%">
+            <div><h3>ห้องนอนที่ 2</h3>
+              <div class="plan"><div class="bed" style="width:60px"><span>5 ฟุต</span></div></div></div>
+          </div>
+          <div class="bedroom">
+            <img src="../img/bed3.jpg" alt="ห้องนอนที่ 3" loading="lazy" style="object-position:75% 70%">
+            <div><h3>ห้องนอนที่ 3</h3>
+              <div class="plan"><div class="bed" style="width:48px"><span>4 ฟุต</span></div></div></div>
+          </div>
+          <div class="bedroom">
+            <img src="../img/living2.jpg" alt="โซฟาในห้องนั่งเล่น" loading="lazy" style="object-position:80% 60%">
+            <div><h3>เพิ่มได้อีก</h3>
+              <div class="plan"><div class="bed sofa" style="width:96px"><span>โซฟาเบด</span></div></div></div>
+          </div>
+        </div>
+        <p class="bed-note">ขนาดเตียงในผังวาดตามสัดส่วนจริง</p>
+      </div>
+      <div class="rise">
+        <div class="arch">
+          <div class="arch-in" data-door>
+            <img src="../img/bed1.jpg" alt="ห้องนอนใหญ่ ผ้าปูลายส้มชมพู หน้าต่างกว้างรับแสง" loading="lazy" style="object-position:40% 60%">
+            <span class="leaf l" aria-hidden="true"></span><span class="leaf r" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="threshold" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVING / KITCHEN / KARAOKE ===== -->
+  <section class="room" aria-labelledby="h-living">
+    <div class="wrap">
+      <div class="living-grid rise">
+        <div class="wide">
+          <div class="arch">
+            <div class="arch-in" data-door>
+              <img src="../img/living.jpg" alt="ห้องนั่งเล่นกว้าง โซฟาหนัง ประตูกระจกมองเห็นสระ" loading="lazy" style="object-position:60% 55%">
+              <span class="leaf l" aria-hidden="true"></span><span class="leaf r" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="threshold" aria-hidden="true"></div>
+        </div>
+        <figure class="snap"><img src="../img/kitchen.jpg" alt="ห้องครัว ผนังกระเบื้องขาว มีเตาและที่คว่ำจาน" loading="lazy"><figcaption>ห้องครัว</figcaption></figure>
+        <figure class="snap"><img src="../img/lounge.jpg" alt="มุมโซฟาริมระเบียงชั้นบน" loading="lazy" style="object-position:40% 60%"><figcaption>มุมนั่งชั้นบน</figcaption></figure>
+      </div>
+      <div class="room-copy rise">
+        <h2 id="h-living">ห้องรวมของ<br><span class="script">ทุกคนในบ้าน</span></h2>
+        <p class="lead">ห้องนั่งเล่นกว้าง มองออกไปเห็นสระ มีห้องครัวให้ทำกับข้าวกินกันเอง และมุมนั่งพักบนชั้นสอง</p>
+        <div class="mic-note">
+          <span class="ic"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>
+          <div><b>มีห้องคาราโอเกะแยก</b>ห้องคาราโอเกะแยกเป็นสัดส่วน ร้องเพลงกันได้ทั้งแก๊ง</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEA ===== -->
+  <section class="sea" aria-labelledby="h-sea">
+    <svg class="sea-wave sw-top" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V30C1280 60 1120 60 960 30S640 0 480 30 160 60 0 30Z" fill="#fff8ec"/></svg>
+    <div class="wrap">
+      <div class="head">
+        <div class="rise">
+          <h2 id="h-sea">ออกจากบ้าน<br><span class="script">ไปทะเลกัน</span></h2>
+          <p class="lead">ขับรถไม่นานก็ถึงทะเลสัตหีบ ทั้งหาดนางรำและหาดน้ำใส</p>
+        </div>
+        <div class="dist rise">
+          <div><svg aria-hidden="true"><use href="#car"/></svg><span><b>15 นาที</b><small>ถึงหาดนางรำ</small></span></div>
+          <div><svg aria-hidden="true"><use href="#car"/></svg><span><b>15 นาที</b><small>ถึงหาดน้ำใส</small></span></div>
+        </div>
+      </div>
+      <div class="ticket rise">
+      <h3><svg viewBox="0 0 40 24" aria-hidden="true"><path d="M4 12c6-9 18-10 26 0-8 10-20 9-26 0z" fill="#ffb347"/><path d="M30 12l8-7v14z" fill="#ff8a5c"/><circle cx="11" cy="10" r="2" fill="#4a2e25"/></svg><span>มีบริการพา<span style="white-space:nowrap">เที่ยวทะเลด้วย</span></span></h3>
+      <ul class="trips">
+        <li><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="22" fill="#e6f6fb"/><path d="M14 40c4-10 12-14 18-14s14 4 18 14" fill="#ffb3c7"/><path d="M20 40v-8M26 40V28M32 40V25M38 40V28M44 40v-8" stroke="#f0628f" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="22" r="2" fill="#3fb6d6"/><circle cx="34" cy="16" r="3" fill="#3fb6d6"/></svg>ดำน้ำดูปะการัง</li>
+        <li><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="22" fill="#fff0f4"/><path d="M32 12c7 0 11 7 11 15 0 5-3 8-6 9H27c-3-1-6-4-6-9 0-8 4-15 11-15z" fill="#f0628f"/><path d="M26 36c-2 6-6 8-8 12M30 36c0 6-2 10-4 14M34 36c0 6 2 10 4 14M38 36c2 6 6 8 8 12" stroke="#f0628f" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="28" cy="27" r="2.2" fill="#4a2e25"/><circle cx="36" cy="27" r="2.2" fill="#4a2e25"/></svg>ตกหมึก</li>
+        <li><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="22" fill="#fff6dc"/><path d="M12 36c8-12 24-13 34 0-10 13-26 12-34 0z" fill="#ffb347"/><path d="M46 36l9-8v16z" fill="#ff8a5c"/><circle cx="21" cy="33" r="2.4" fill="#4a2e25"/><path d="M30 8v10" stroke="#4a2e25" stroke-width="2" /><path d="M30 18c0 4 4 4 4 0" stroke="#4a2e25" stroke-width="2" fill="none"/></svg>ตกปลา</li>
+        <li><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="22" fill="#e6f6fb"/><rect x="16" y="24" width="32" height="22" rx="6" fill="#4a2e25"/><rect x="24" y="19" width="12" height="7" rx="2" fill="#4a2e25"/><circle cx="32" cy="35" r="7.5" fill="#3fb6d6" stroke="#fff" stroke-width="3"/><path d="M48 14c4-3 8 0 8 0-2 4-6 4-8 0z" fill="#ffb347"/></svg><span>ถ่ายภาพ<span style="white-space:nowrap">ใต้น้ำ</span>กับปลา</span></li>
+      </ul>
+      </div>
+    </div>
+    <svg class="sea-wave sw-bot" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c160-30 320-30 480 0s320 30 480 0 320-30 480 0v30H0z" fill="#fff8ec"/></svg>
+  </section>
+
+  <!-- ===== KNOCK: contact ===== -->
+  <section class="knock" id="contact" aria-labelledby="h-knock">
+    <div class="wrap">
+      <div class="head rise">
+        <h2 id="h-knock">เคาะประตู<br><span class="pac">Love Story</span> ได้เลย</h2>
+        <p class="lead" style="margin:12px auto 0">แจ้งวันที่อยากเข้าพักและจำนวนคน ทักไลน์หรือโทรถามได้เลย</p>
+      </div>
+      <div class="rise" style="width:min(100%,380px)">
+        <div class="arch">
+          <div class="arch-in" data-door>
+            <img src="../img/window.jpg" alt="หน้าต่างวงกลมประดับโบว์แดง ใต้ป้าย Love Story pool villa" loading="lazy" style="object-position:62% 40%">
+            <span class="leaf l" aria-hidden="true"></span><span class="leaf r" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="threshold" aria-hidden="true"></div>
+      </div>
+      <div class="contact-card rise">
+        <a class="btn btn-line" href="https://line.me/ti/p/~082-2189655" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#line"/></svg>แอดไลน์ Love Story</a>
+        <p class="line-id">LINE ID: <b>082-2189655</b> <button class="copy" type="button" data-copy="082-2189655">คัดลอก ID</button></p>
+        <div class="phones">
+          <a class="phone" href="tel:0822189655"><span class="call-ic"><svg aria-hidden="true" style="color:#fff"><use href="#phone"/></svg></span><span class="num">082-218-9655</span><span class="who">K.ปุ้ย</span></a>
+          <a class="phone" href="tel:0984636433"><span class="call-ic"><svg aria-hidden="true" style="color:#fff"><use href="#phone"/></svg></span><span class="num">098-463-6433</span><span class="who">K.เอ้</span></a>
+        </div>
+        <a class="fb" href="https://www.facebook.com/share/1D5xcCfDe3/?mibextid=wwXIfr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1f5fbf"/><path d="M13.3 19v-6h2l.3-2.4h-2.3V9.2c0-.7.2-1.2 1.2-1.2h1.2V5.9a16 16 0 0 0-1.8-.1c-1.8 0-3 1.1-3 3.1v1.7h-2V13h2v6z" fill="#fff"/></svg>ดูรูปเพิ่มที่เพจ Facebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="hem" aria-hidden="true"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 46C180 10 300 86 540 46S900 10 1080 46s260 30 360 4V120H0z" fill="#bfe9f3"/><path d="M0 76c200-36 340 34 560 0s340-32 520 4 260 20 360-4V120H0z" fill="#7fd2e6"/><path d="M0 76c200-36 340 34 560 0s340-32 520 4 260 20 360-4" stroke="#fff" stroke-width="5" fill="none" stroke-dasharray="2 16" stroke-linecap="round"/></svg></div>
+<footer><div class="wrap"><svg width="80" height="45" style="color:var(--ink);margin:0 auto 6px" aria-hidden="true"><use href="#logo"/></svg>Love Story Pool Villa · สัตหีบ ชลบุรี<br><a href="../" style="font-weight:700">ดูแบบโทนพาสเทล</a></div></footer>
+
+<nav class="dock hide" aria-label="ติดต่อด่วน">
+  <a class="btn btn-line" href="https://line.me/ti/p/~082-2189655" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#line"/></svg>แอดไลน์</a>
+  <a class="btn btn-call" href="tel:0822189655" aria-label="โทร 082-218-9655"><svg aria-hidden="true" style="color:var(--pink)"><use href="#phone"/></svg>โทร</a>
+</nav>
+
+<script>
+(() => {
+  // decorative palm fronds, drawn once
+  const frond = (len, a='#5aa36a', b='#3f8a55') => {
+    let s = `<svg viewBox="-20 -260 ${len+60} 520" width="${len}" height="${Math.round(len*520/(len+80))}" aria-hidden="true"><path d="M0 0Q${len*.5} -40 ${len} 10" stroke="${b}" stroke-width="7" fill="none" stroke-linecap="round"/>`;
+    const n = 17;
+    for (let i=1;i<=n;i++){
+      const t=i/(n+1), x=len*t, y=-80*t*(1-t)*.5;
+      const L=210*(1-Math.pow(t-.35,2)*1.3)*(t<.12?t/.12*.7+.3:1);
+      for (const sd of [-1,1]){
+        const g=(sd*(55-t*25))*Math.PI/180, ex=x+Math.sin(Math.abs(g))*L*.55, ey=y+sd*Math.cos(g)*L, cx=x+L*.15, cy=y+sd*L*.55;
+        s+=`<path d="M${x} ${y}Q${cx-18} ${cy} ${ex} ${ey}Q${cx+28} ${cy} ${x+14} ${y+sd*4}Z" fill="${(i+(sd>0))%2?a:b}"/>`;
+      }
+    }
+    return s+'</svg>';
+  };
+  const place = (sel, html, css) => { const el=document.querySelector(sel); if(!el) return; const d=document.createElement('div'); d.className='deco'; d.style.cssText=css; d.innerHTML=html; el.prepend(d); };
+  const small = matchMedia('(max-width:879px)').matches;
+  place('.hero', frond(small?260:420), `left:${small?-120:-150}px;top:${small?40:20}px;transform:rotate(28deg)`);
+  place('.hero', frond(small?240:380,'#6cb87a','#4b9a5f'), `right:${small?-120:-140}px;top:${small?300:120}px;transform:scaleX(-1) rotate(18deg)`);
+  place('.beds', frond(small?220:340,'#6cb87a','#4b9a5f'), `right:${small?-110:-130}px;bottom:30px;transform:scaleX(-1) rotate(-24deg);opacity:.9`);
+  place('.knock', frond(small?220:360), `left:${small?-110:-140}px;bottom:20px;transform:rotate(-28deg)`);
+  const star = (c, s) => `<svg viewBox="0 0 100 100" width="${s}" height="${s}" aria-hidden="true"><path d="M50 6c5 0 8 26 14 30s32-2 33 3-22 16-24 23 12 30 7 33-22-17-30-17-25 20-30 17 9-26 7-33S2 44 3 39s27 1 33-3 9-30 14-30z" fill="${c}"/><g fill="#fff" opacity=".7"><circle cx="50" cy="30" r="3"/><circle cx="50" cy="48" r="3"/><circle cx="30" cy="50" r="3"/><circle cx="70" cy="50" r="3"/><circle cx="40" cy="70" r="3"/><circle cx="60" cy="70" r="3"/></g></svg>`;
+  place('.sea', star('#ff9a6b', small?54:80), `right:${small?'14px':'8%'};bottom:${small?34:60}px;transform:rotate(14deg);z-index:3`);
+  place('.sea', star('#ffc0d1', small?36:52), `right:${small?'18px':'6%'};top:${small?70:110}px;transform:rotate(-12deg);z-index:3`);
+  place('.knock', star('#ff9a6b', small?44:64), `right:${small?'16px':'12%'};top:${small?40:70}px;transform:rotate(18deg)`);
+
+  // doors open as each room comes into view
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const doors = document.querySelectorAll('[data-door]');
+  const rises = document.querySelectorAll('.rise');
+  if (reduce || !('IntersectionObserver' in window)) {
+    doors.forEach(d=>d.classList.add('open')); rises.forEach(r=>r.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add(e.target.hasAttribute('data-door') ? 'open' : 'in'); io.unobserve(e.target); }
+    }), { threshold: .35 });
+    doors.forEach(d=>io.observe(d)); rises.forEach(r=>io.observe(r));
+    const hero = document.querySelector('.hero [data-door]');
+    setTimeout(() => hero.classList.add('open'), 450);
+  }
+
+  // hide the dock while the contact card itself is on screen
+  const dock = document.querySelector('.dock');
+  const seen = new Set();
+  const dio = new IntersectionObserver(es => {
+    es.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target));
+    dock.classList.toggle('hide', seen.size > 0);
+  });
+  document.querySelectorAll('.hero .ctas, .contact-card').forEach(el => dio.observe(el));
+
+  // copy LINE id
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'คัดลอกแล้ว'; }
+    catch { b.textContent = b.dataset.copy; }
+    setTimeout(() => b.textContent = 'คัดลอก ID', 2200);
+  }));
+})();
+</script>
+</body>
+</html>
