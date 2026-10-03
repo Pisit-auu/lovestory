@@ -243,6 +243,18 @@ footer svg{display:block}
   *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
   .js .rise{opacity:1;transform:none}
 }
+
+/* map */
+.map{margin-top:34px;display:grid;gap:16px;align-items:center}
+.map-frame{background:var(--plaster);padding:10px;border-radius:30px;box-shadow:0 18px 34px -16px rgba(15,76,92,.5)}
+.map-frame iframe{display:block;width:100%;height:clamp(260px,40vw,360px);border:0;border-radius:22px;background:#e6f6fb}
+.map-info{background:rgba(255,255,255,.92);border-radius:24px;padding:18px 20px;color:var(--ink)}
+.map-info h3{font-size:20px;line-height:1.3;display:flex;gap:10px;align-items:center}
+.map-info h3 svg{width:26px;height:26px;flex:none}
+.map-info p{font-size:16px;color:var(--ink-soft);margin-top:4px}
+.map-info .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.map-info .btn{min-height:48px;font-size:16px;padding:0 20px}
+@media (min-width:880px){.map{grid-template-columns:1.6fr 1fr}}
 </style>
 </head>
 <body>
@@ -417,6 +429,19 @@ footer svg{display:block}
         <div class="dist rise">
           <div><svg aria-hidden="true"><use href="#car"/></svg><span><b>15 นาที</b><small>ถึงหาดนางรำ</small></span></div>
           <div><svg aria-hidden="true"><use href="#car"/></svg><span><b>15 นาที</b><small>ถึงหาดน้ำใส</small></span></div>
+        </div>
+      </div>
+      <div class="map rise">
+        <div class="map-frame">
+          <iframe src="https://maps.google.com/maps?q=12.7116611,100.9772183&amp;hl=th&amp;z=16&amp;output=embed" title="แผนที่ Love Story Pool Villa สัตหีบ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="map-info">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 23s8-7.6 8-13.5A8 8 0 0 0 4 9.5C4 15.4 12 23 12 23z" fill="#f0628f"/><circle cx="12" cy="9.5" r="3.2" fill="#fff"/></svg>ที่ตั้งบ้าน</h3>
+          <p>Love Story Pool Villa · สัตหีบ ชลบุรี<br>ห่างหาดนางรำและหาดน้ำใสประมาณ 15 นาที</p>
+          <div class="btns">
+            <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=12.7116611,100.9772183" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.7 11.3l-9-9a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5z"/></svg>นำทาง</a>
+            <a class="btn btn-call" href="https://www.google.com/maps/place/Love+story+pool+Villa+Sattahip/@12.7119908,100.9773363,18z/data=!4m6!3m5!1s0x31028d0024ac2f45:0x89d68e0d3f9c7969!8m2!3d12.7116611!4d100.9772183!16s%2Fg%2F11mzpcn_b6" target="_blank" rel="noopener">เปิดใน Google Maps</a>
+          </div>
         </div>
       </div>
       <div class="ticket rise">
