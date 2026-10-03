@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://lovestory-gamma.vercel.app/</loc>
+    <loc>https://lovestory-poolvilla.vercel.app/</loc>
     <lastmod>2026-10-03</lastmod>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/og.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/pool.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/bed1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/living.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/kitchen.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lovestory-gamma.vercel.app/img/window.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/pool.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/bed1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/living.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/kitchen.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lovestory-poolvilla.vercel.app/img/window.jpg</image:loc></image:image>
   </url>
 </urlset>
